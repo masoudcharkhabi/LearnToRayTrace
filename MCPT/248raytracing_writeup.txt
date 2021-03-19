@@ -1,0 +1,5 @@
+In order to generate test samples for which we can test our denoiser, our team implemented a simple Monte-carlo based ray-tracer in C++ that renders a sample image of many Lambertian diffuse spheres. The ray-tracer implementation was made following the guide at Ray Tracing in One Weekend by Peter Shirley as recommended by our TA in the proposal stage. The implementation draws from the reference implementation as given on the website.
+
+The following features are present within our implementation of the ray tracer: multisample antialiasing, a simple Lambertian diffuse material, gamma correction, thin lens approximated depth of field. 
+
+In order to generate test images for the denoiser, the test scene was rendered multiple times with increasing samples per pixel, namely 2, 8, 32, 128, and 512. These sample images consisted a portion of the test set of the denoiser.
